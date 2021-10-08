@@ -2,6 +2,25 @@
     &__pictures {
         background-color: $color-primary;
         grid-column: full-start / col-end 4;
+
+        background-image: linear-gradient(rgba($color-primary,.5), rgba($color-primary,.5)), url(../img/back.jpg);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+
+        &--1 {
+            width: 100%;
+            grid-column: 2 / 6;
+            grid-row: 2/ 6;
+        }
+        &--2 {
+            width: 115%;
+            grid-column: 4/7;
+            grid-row: 4/6;
+            z-index: 20;
+            pointer-events: none;
+        }
     }
 
     &__content {
