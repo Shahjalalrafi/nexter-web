@@ -7,10 +7,32 @@
     @extend %heading;
 }
 .heading-2 {
-    @extend %heading
+    @extend %heading;
+    font-size: 3.2rem;
+    font-style: italic;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-primary;
+    }
 }
 .heading-3 {
-    @extend %heading
+    @extend %heading;
+    font-size: 4rem;
+    line-height: 1;
+    font-style: italic;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+
 }
 .heading-4 {
     @extend %heading;
@@ -24,3 +46,16 @@
         color: $color-grey-dark-1;
     }
 }
+
+.btn {
+    border: none;
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+
+.mb-sm {margin-bottom: 1rem;}
+.mb-xm {margin-bottom: 2rem;}
+.mb-md {margin-bottom: 3rem;}
+.mb-lg {margin-bottom: 4rem;}
+.mb-hg {margin-bottom: 8rem;}
