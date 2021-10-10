@@ -5,6 +5,11 @@
 
 .heading-1 {
     @extend %heading;
+    font-size: 4.4rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
 }
 .heading-2 {
     @extend %heading;
@@ -16,7 +21,7 @@
     }
 
     &--dark {
-        color: $color-primary;
+        color: $color-primary-dark;
     }
 }
 .heading-3 {
@@ -54,9 +59,6 @@
     cursor: pointer;
 }
 
-img {
-    width: 100%;
-}
 
 .mb-sm {margin-bottom: 1rem;}
 .mb-xm {margin-bottom: 2rem;}
