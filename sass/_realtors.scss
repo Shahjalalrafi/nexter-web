@@ -10,9 +10,9 @@
     grid-row-gap: 2.5rem;
 
 
-    // @media only screen and (max-width: $bp-medium) {
-    //     grid-column: 1 / -1;
-    // }
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
 
 
     &__list {
